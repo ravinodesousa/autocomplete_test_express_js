@@ -1,0 +1,27 @@
+{
+  "name": "autocomplete-expressjs",
+  "version": "1.0.0",
+  "description": "Marsh McLennan Autocomplete test using React JS and Node JS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ravinodesousa/autocomplete_test_express_js.git"
+  },
+  "keywords": [
+    "autocomplete",
+    "test",
+    "expressjs"
+  ],
+  "author": "Ravino De Souza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ravinodesousa/autocomplete_test_express_js/issues"
+  },
+  "homepage": "https://github.com/ravinodesousa/autocomplete_test_express_js#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
