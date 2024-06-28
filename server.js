@@ -1,13 +1,11 @@
 const express = require("express");
 const app = express();
+const musicRoute = require("./routes/musicRoute");
 
 // Define a port number
 const PORT = process.env.PORT || 3000;
 
-// Define a basic route
-app.get("/", (req, res) => {
-  res.send("Hello, world!");
-});
+app.use(musicRoute);
 
 // Start the server
 app.listen(PORT, () => {
