@@ -5,6 +5,8 @@ const musicRoute = require("./routes/musicRoute");
 // Define a port number
 const PORT = process.env.PORT || 3000;
 
+app.use(express.json());
+
 app.use(musicRoute);
 
 // Start the server
