@@ -21,19 +21,28 @@ const searchData = (req, res) => {
     if (parsedData) {
       parsedData?.map((artist) => {
         let artistName = (artist?.name ?? "").toLowerCase();
-        if (artistName.includes(searchParam)) {
-          results.push({ title: artist?.name, type: "artist" });
+        if (artistName.startsWith(searchParam)) {
+          results.push({
+            title: artist?.name,
+            type: "artist",
+          });
         }
         artist?.albums?.map((album) => {
           let albumName = (album?.title ?? "").toLowerCase();
-          if (albumName.includes(searchParam)) {
-            results.push({ title: album?.title, type: "album" });
+          if (albumName.startsWith(searchParam)) {
+            results.push({
+              title: album?.title,
+              type: "album",
+            });
           }
 
           album?.songs?.map((song) => {
             let songName = (song?.title ?? "").toLowerCase();
-            if (songName.includes(searchParam)) {
-              results.push({ title: song?.title, type: "song" });
+            if (songName.startsWith(searchParam)) {
+              results.push({
+                title: song?.title,
+                type: "song",
+              });
             }
           });
         });
