@@ -1,8 +1,12 @@
 const { Router } = require("express");
-const { searchData } = require("../controllers/musicController");
+const {
+  getAutocompleteSuggestions,
+  getSearchedData,
+} = require("../controllers/musicController");
 
 const router = Router();
 
-router.get("/", searchData);
+router.get("/search/autocomplete", getAutocompleteSuggestions);
+router.get("/search/result", getSearchedData);
 
 module.exports = router;
