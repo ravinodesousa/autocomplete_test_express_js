@@ -4,7 +4,7 @@
   "description": "Marsh McLennan Autocomplete test using React JS and Node JS",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "node server.js"
   },
   "repository": {
@@ -26,5 +26,9 @@
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
   }
 }
